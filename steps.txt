@@ -1,8 +1,28 @@
-sudo su
-apt-get update
-apt-get upgrade
-apt-get install apache2
-apt-get install node
-npm i -g n
-n stable
-npm i pm2 -g
+1 -> Updating
+  sudo su
+  apt-get update
+  apt-get upgrade
+  apt-get install -y libgbm-dev
+  apt-get install -y libasound2
+
+2 -> Install Apache
+  apt-get install apache2
+
+3 -> Install And Update NodeJS
+  apt-get install node
+  npm i -g n
+  n stable
+
+4 -> Install pm2 for running node applications
+  npm i pm2 -g
+
+5 -> Setting Up Scrapper
+  mkdir dev
+  cd dev
+  git clone https://--scrapper
+  cd scrapper
+  npm i
+  pm2 start index.js --name scrapper --attach
+
+
+
